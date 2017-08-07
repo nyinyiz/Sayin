@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TodayExpenseActivity">
+        <activity android:name=".activity.TodayExpenseActivity"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_home"
+            android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,6 +23,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.ShowExpenseActivity"></activity>
+        <activity android:name=".OverallActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_home"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ToDoActivity"></activity>
     </application>
 
 </manifest>

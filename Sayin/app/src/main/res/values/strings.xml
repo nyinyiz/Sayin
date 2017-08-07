@@ -7,5 +7,14 @@
     <string name="content_description_empty_image">Image for empty data set</string>
     <string name="content_description_empty_action">Action for empty data set</string>
     <string name="content_description_empty_label">Label for empty data set</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="overall">Overall</string>
+    <string name="activity">Activities</string>
+    <string name="todo">ToDo</string>
+    <string name="suggest">Suggest</string>
+    <string name="expense_list">Expense List</string>
 
 </resources>

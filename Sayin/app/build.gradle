@@ -18,6 +18,10 @@ android {
         }
     }
 }
+repositories {
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -41,4 +45,11 @@ dependencies {
     provided rootProject.ext.aptLibraries.daggerCompiler
     compile rootProject.ext.libraries.glide
     compile 'com.code-troopers.betterpickers:library:3.1.0'
+
+    compile 'com.github.lzyzsd:circleprogress:1.2.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
 }

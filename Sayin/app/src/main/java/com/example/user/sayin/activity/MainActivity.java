@@ -19,7 +19,7 @@ import java.util.Date;
 public class MainActivity extends BaseActivity {
 
     EditText item_name,amount;
-    Button submit,show;
+    Button submit,show,overall;
 
     String Item_name,Amount;
 
@@ -36,6 +36,7 @@ public class MainActivity extends BaseActivity {
         amount = (EditText) findViewById(R.id.amount);
         submit = (Button) findViewById(R.id.submit);
         show = (Button) findViewById(R.id.show);
+        overall = (Button) findViewById(R.id.overall);
 
         Item_name = item_name.getText().toString();
         Amount = amount.getText().toString();
@@ -52,6 +53,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ShowExpenseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        overall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,OverallActivity.class);
                 startActivity(intent);
             }
         });
