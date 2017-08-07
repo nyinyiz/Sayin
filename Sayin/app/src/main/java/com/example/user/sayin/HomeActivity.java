@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView overall;
+    TextView overall,todo;
     private static final boolean AUTO_HIDE = true;
 
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
@@ -75,10 +75,18 @@ public class HomeActivity extends AppCompatActivity {
         hide();
 
         overall = (TextView) findViewById(R.id.overall);
+        todo = (TextView) findViewById(R.id.todo);
         overall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this,OverallActivity.class);
+                startActivity(intent);
+            }
+        });
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,ToDoActivity.class);
                 startActivity(intent);
             }
         });
