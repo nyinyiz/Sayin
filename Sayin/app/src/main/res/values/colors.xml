@@ -3,4 +3,38 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="background_color">#009688</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+
+    <color name="dark_grey">#424242</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#757575</color>
+
+    <color name="grey">#e0e0e0</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="green">#35cb5d</color>
+    <color name="yellow">#ffdf00</color>
+    <color name="indigo">#5c6bc0</color>
+    <color name="orange">#ff9800</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="blue_soft">#cff4ff</color>
+    <color name="blue_dark">#728bf7</color>
+
+
+    <color name="mpt">#3F51B5</color>
+    <color name="telenor">#03a9f4</color>
+    <color name="ooredoo">#e53935</color>
+    <color name="mec">#303F9F</color>
+
+
+
+    <!--<color name="green">#9ccc65</color>-->
+    <color name="red">#ef5350</color>
 </resources>
