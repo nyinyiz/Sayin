@@ -1,4 +1,4 @@
-package com.example.user.sayin;
+package com.example.user.sayin.activity;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.user.sayin.R;
+import com.example.user.sayin.activity.base.BaseActivity;
 import com.example.user.sayin.database.Sayin_database;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.UUID;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     EditText item_name,amount;
     Button submit,show,overall;
