@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Sayin</string>
+
+    <string name="msg_default_empty">No Data To Display</string>
+
+    <!-- Content Description -->
+    <string name="content_description_empty_image">Image for empty data set</string>
+    <string name="content_description_empty_action">Action for empty data set</string>
+    <string name="content_description_empty_label">Label for empty data set</string>
+
 </resources>

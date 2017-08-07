@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.0"
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.user.sayin"
         minSdkVersion 16
@@ -24,8 +24,21 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
+    testCompile rootProject.ext.testLibraries.junit
+
+    compile rootProject.ext.libraries.appCompat
+    compile rootProject.ext.libraries.designSupport
+    compile rootProject.ext.libraries.constraintLayout
+
+    compile rootProject.ext.libraries.eventBus
+    compile rootProject.ext.libraries.cardView
+
+    compile rootProject.ext.libraries.butterknife
+    compile rootProject.ext.libraries.eventBus
+    compile rootProject.ext.aptLibraries.butterknifeCompiler
+
+    compile rootProject.ext.libraries.dagger
+    provided rootProject.ext.aptLibraries.daggerCompiler
+    compile rootProject.ext.libraries.glide
+    compile 'com.code-troopers.betterpickers:library:3.1.0'
 }

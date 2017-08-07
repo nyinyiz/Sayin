@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.example.user.sayin.model.TodayExpense;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,6 +97,34 @@ public class Sayin_database extends SQLiteOpenHelper {
             Log.d("today_expense", temp.toString());
 
             result.add(temp);
+        }
+
+        return result;
+    }
+
+
+    public List<TodayExpense> getAllDayExpense() {
+
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String selectQuery = "SELECT * FROM " + KEY_TODAY_EXPENSE ;
+
+        List<TodayExpense> result = new ArrayList<>();
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+
+
+            TodayExpense todayExpense = new TodayExpense();
+           todayExpense.item_name = cursor.getString(cursor.getColumnIndex(KEY_ITEM_NAME));
+            todayExpense.amount = cursor.getString(cursor.getColumnIndex(KEY_AMOUNT));
+
+            result.add(todayExpense);
+            cursor.moveToNext();
+
         }
 
         return result;
